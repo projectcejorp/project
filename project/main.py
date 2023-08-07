@@ -60,6 +60,9 @@ if __name__ == "__main__":
     print(f'saving the modified speech...')
 
     xd_mel = mel_load(mask_path)
+    # we here use a pre-trained Chou's model for inference as an example
+    # The defense framework support any black-box speech synthesis models,
+    # .e.g, X_infer(src_path, xd_mel.T, mask_infer_path, other_params)
     chous_infer(src_path, xd_mel.T, mask_infer_path)
     print(f'Saving the synthetic speech based on modified speech...')
 
