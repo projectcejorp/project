@@ -1,6 +1,6 @@
 # Anonymous Repository
 
-This repository is anoynomous and will be public soon. 
+This repository is anonymous now but will be public soon. 
 
 ## Defense
 
