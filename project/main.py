@@ -21,7 +21,7 @@ if __name__ == "__main__":
     encoder = VoiceEncoder()
 
     # example paths
-    wav_path = f'./examples/p287_{args.sid}.wav'
+    wav_path = './examples/p287_{args.sid}.wav'
     src_path = './examples/content.wav'
     out_path = './temp_wav/infer_raw.wav'
     mask_path = 'temp_wav/mask.wav'
