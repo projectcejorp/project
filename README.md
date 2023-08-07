@@ -2,7 +2,7 @@
 
 This repository contains the official implementation for your project. 
 
-## Adversarial Attack
+## Defense
 
 To perform an defense toward a speech sample, you could follow the example command below:
 
