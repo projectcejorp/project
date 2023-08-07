@@ -19,7 +19,7 @@ parser.add_argument('--n_iter', type=int, default=100, help='Number of iteration
 Defense params
 '''
 parser.add_argument('--ksize', type=int, default=11, help='kernel size for GB-Mask.')
-parser.add_argument('--std', type=int, default=1.5, help='standard deviation for GB-Mask.')
+parser.add_argument('--std', type=float, default=1.5, help='standard deviation for GB-Mask.')
 parser.add_argument('--eps', type=float, default=0.1, help='eps for noise clipping.')
 parser.add_argument('--spk_m', type=bool, default=False, help='Whether apply speaker mask.')
 parser.add_argument('--distribution', type=str, default='G', help='Distribution of the noise.')
