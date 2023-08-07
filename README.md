@@ -1,6 +1,6 @@
 # Anonymous Repository
 
-This repository contains the official implementation for your project. 
+This repository is anoynomous and will be public soon. 
 
 ## Defense
 
