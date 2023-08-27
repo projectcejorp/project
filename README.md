@@ -1,6 +1,20 @@
-# Anonymous Repository
+# Protecting Your Voice From Speech Synthesis Attacks.
 
-This repository is anonymous now but will be public soon. 
+This repository hosts the codes of our project, “Protecting Your Voice From Speech Synthesis Attacks.” We modify speeches in the frequency domains to avoid one’s voice getting cloned by speech synthesis systems, preventing improper usage in Voicer conversion (VC)  and Text-to-speech (TTS).
+
+# What does this repository contain?
+
++Data processing of audio files.
++How we modify speech samples with the proposed three modification methods, Zero Mask, AN-Mask, and GB-Mask in the frequency domain.
++How we iteratively find the optimum frequency-modification pairs.
++How we protect a single speech (SampleMask).
++How we protect arbitrary speeches of a speaker (SpeakerMask).
++Examples of running a defense.
+
+
+
+
+
 
 ## Defense
 
