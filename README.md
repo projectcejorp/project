@@ -1,6 +1,6 @@
 # Protecting Your Voice From Speech Synthesis Attacks.
 
-This repository hosts the codes of our project, which focuses on protecting a speaker's voice from speech synthesis attacks. on protecting a speaker's voice from speech synthesis attacks. In this project, we propose two defense schemes that can be used by the speaker to process his or her speeches before publishing them on social media platforms or sending them to others. The processed speeches cannot only significantly degrade the performance of speech synthesis systems but also keep the sound of the speaker's voice so that they can still be used for normal purposes.
+This repository hosts the codes of our project, which focuses on protecting a speaker's voice from speech synthesis attacks. In this project, we propose two defense schemes that can be used by the speaker to process his or her speeches before publishing them on social media platforms or sending them to others. The processed speeches cannot only significantly degrade the performance of speech synthesis systems but also keep the sound of the speaker's voice so that they can still be used for normal purposes.
 
 # What does this repository contain?
 
