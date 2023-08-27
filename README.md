@@ -1,20 +1,17 @@
 # Protecting Your Voice From Speech Synthesis Attacks.
 
-This repository hosts the codes of our project, “Protecting Your Voice From Speech Synthesis Attacks.” We modify speeches in the frequency domains to mitigate one’s voice getting cloned by speech synthesis systems, preventing improper usage in Voicer conversion (VC)  and Text-to-speech (TTS).
-Here's our defense scheme figure.
-
-![Defense scheme](./workflow.png)
+This repository hosts the codes of our project, which focuses on protecting a speaker's voice from speech synthesis attacks. on protecting a speaker's voice from speech synthesis attacks. In this project, we propose two defense schemes that can be used by the speaker to process his or her speeches before publishing them on social media platforms or sending them to others. The processed speeches cannot only significantly degrade the performance of speech synthesis systems but also keep the sound of the speaker's voice so that they can still be used for normal purposes.
 
 # What does this repository contain?
 
 - Data processing of audio files
 
-- How we modify speech samples with proposed three modification methods in the frequency domain:
+- How we modify speech samples with our proposed three modification methods in the frequency domain:
   - Zero Mask
   - AN-Mask
   - GB-Mask
 
-- How we iteratively find the optimum frequency-modification pairs.
+- How we iteratively find the optimal frequency-modification pairs.
 
 - How we protect a single speech (SampleMask).
 
@@ -32,18 +29,18 @@ example bash
 
 # Examples of running defense.
 
-To perform the defense toward a target speech sample:
+To perform the defense on a target speech sample:
 
 ```bash
 python main.py --sid 005 --tau 0.06 --eps 0.1 --ksize 11 --std 1.5 --b_num 16
 ```
 
-To perform the defense toward arbitary speech samples of a speaker:
+To perform the defense on arbitrary speech samples of a speaker:
 ```bash
 python main.py --sid 005 --tau 0.06 --eps 0.1 --ksize 11 --std 1.5 --b_num 16
 ```
 
-Evaluate the defense Effects:
+Evaluate the defense performance:
 ```bash
 example bash
 ```
@@ -51,11 +48,10 @@ example bash
 
 # Integration Tips
 
-Our defense scheme supports any black-box speech synthesis systems. If you would like to try more speech synthesis systems, we recommend using general functions to represent VC models and TTS models 
-so that they can easily combine with our defense scheme; we also encourage later works to explore more potential modification methods in the frequency domains.
+Our defense schemes support any black-box speech synthesis systems. If you would like to try more speech synthesis systems, we recommend using general functions to represent VC models and TTS models so that they can easily combine with our defense schemes. We also encourage later works to explore more potential modification methods in the frequency domain.
 
 # Reference
-For pretrain the speech synthesis systems, you can refer to the [Chou’s](https://arxiv.org/abs/1904.05742), [AutoVC](https://arxiv.org/abs/1905.05879), and [SV2TTS](https://arxiv.org/abs/1806.04558), the original papers. For the Attack-VC (the baseline in our paper), please refer to their [paper](https://arxiv.org/abs/2005.08781). In his repository, we provide example audio files for quickly run the codes. The full dataset we used in the paper, CSTR VCTK, is public avaliable and can be found [here](https://datashare.ed.ac.uk/handle/10283/3443).
+For pretrain the speech synthesis systems, you can refer to the original papers  of [Chou’s](https://arxiv.org/abs/1904.05742), [AutoVC](https://arxiv.org/abs/1905.05879), and [SV2TTS](https://arxiv.org/abs/1806.04558). For the Attack-VC (the baseline in our paper), please refer to their [paper](https://arxiv.org/abs/2005.08781). In this repository, we provide some audio examples for running the codes. The full dataset we used in the paper, CSTR VCTK, is public and can be found [here](https://datashare.ed.ac.uk/handle/10283/3443).
 
 
 Parts of our codebase were inspired by or adapted from the following repositories:
@@ -65,10 +61,4 @@ Parts of our codebase were inspired by or adapted from the following repositorie
 - [**Real-Time-Voice-Cloning**](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
 
 We thank the authors of these repositories for making their code available to the community.
-
-
-
-
-
-
 
