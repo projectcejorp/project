@@ -49,10 +49,10 @@ example bash
 ```
 
 
-# Others
+# Integration Tips
 
 Our defense scheme supports any black-box speech synthesis systems. If you would like to try more speech synthesis systems, we recommend using general functions to represent VC models and TTS models 
-so that they can easily combine with our defense scheme; also encourage later works to explore more potential modification methods in the frequency domains.
+so that they can easily combine with our defense scheme; we also encourage later works to explore more potential modification methods in the frequency domains.
 
 # Reference
 For pretrain the speech synthesis systems, you can refer to the [Chou’s](https://arxiv.org/abs/1904.05742), [AutoVC](https://arxiv.org/abs/1905.05879), and [SV2TTS](https://arxiv.org/abs/1806.04558), the original papers. For the Attack-VC (the baseline in our paper), please refer to their [paper](https://arxiv.org/abs/2005.08781). In his repository, we provide example audio files for quickly run the codes. The full dataset we used in the paper, CSTR VCTK, is public avaliable and can be found [here](https://datashare.ed.ac.uk/handle/10283/3443).
