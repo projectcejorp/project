@@ -55,7 +55,14 @@ So that it can easily combine with our defense scheme, Also, we encourage later 
 For pretrain the speech synthesis systems, you can refer to the [Chou’s](https://arxiv.org/abs/1904.05742), [AutoVC]([URL2](https://arxiv.org/abs/1905.05879)), and [SV2TTS]([URL3](https://arxiv.org/abs/1806.04558)) original papers.
 For the [Attack-VC](the baseline in our paper), please refer to the their [paper](https://arxiv.org/abs/2005.08781): 
 
-For data preprocessing and speech synthesis implementation, we partially refer to the below public implementations:
+
+Parts of our codebase were inspired by or adapted from the following repositories:
+
+- [**attack-vc**](https://github.com/cyhuang-tw/attack-vc) 
+- [**AutoVC**](https://github.com/cyhuang-tw/AutoVC) 
+- [**Real-Time-Voice-Cloning**](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
+
+We extend our gratitude to the authors of these repositories for making their code available to the community.
 
 
 
