@@ -1,6 +1,9 @@
 # Protecting Your Voice From Speech Synthesis Attacks.
 
 This repository hosts the codes of our project, “Protecting Your Voice From Speech Synthesis Attacks.” We modify speeches in the frequency domains to avoid one’s voice getting cloned by speech synthesis systems, preventing improper usage in Voicer conversion (VC)  and Text-to-speech (TTS).
+Here's our defense scheme figure.
+
+![Defense scheme](./workflow.png)
 
 # What does this repository contain?
 
