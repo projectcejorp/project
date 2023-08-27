@@ -4,15 +4,18 @@ This repository hosts the codes of our project, “Protecting Your Voice From Sp
 
 # What does this repository contain?
 
-+Data processing of audio files.
-+How we modify speech samples with the proposed three modification methods, Zero Mask, AN-Mask, and GB-Mask in the frequency domain.
-+How we iteratively find the optimum frequency-modification pairs.
-+How we protect a single speech (SampleMask).
-+How we protect arbitrary speeches of a speaker (SpeakerMask).
-+Examples of running a defense.
+- **How we modify speech samples with proposed three modification methods in the frequency domain:**
+  - Zero Mask
+  - AN-Mask
+  - GB-Mask
 
+- **How we iteratively find the optimum frequency-modification pairs.**
 
+- **How we protect a single speech (SampleMask).**
 
+- **How we protect arbitrary speeches of a speaker (SpeakerMask).**
+
+- **Examples of running a defense.**
 
 
 
