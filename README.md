@@ -41,19 +41,13 @@ To perform the defense toward arbitary speech samples of a speaker, you could fo
 python main.py --sid 005 --tau 0.06 --eps 0.1 --ksize 11 --std 1.5 --b_num 16
 ```
 
-
 # Others
-Our defense scheme supports any black-box speech synthesis systems. If you would like to try more speech synthesis systems,, we strongly recommend use general functions to represent VC models and TTS models, such as
 
-vc_infer(src_path, tgt_path,out_path, **model_config)
-tts_infer(text, tgt_path,out_path,**model_config)
-
-So that it can easily combine with our defense scheme, Also, we encourage later works to explore more potential modification methods in the frequency domains.
+Our defense scheme supports any black-box speech synthesis systems. If you would like to try more speech synthesis systems, we recommend using general functions to represent VC models and TTS models 
+so that they can easily combine with our defense scheme; also encourage later works to explore more potential modification methods in the frequency domains.
 
 # Reference
-
-For pretrain the speech synthesis systems, you can refer to the [Chou’s](https://arxiv.org/abs/1904.05742), [AutoVC]([URL2](https://arxiv.org/abs/1905.05879)), and [SV2TTS]([URL3](https://arxiv.org/abs/1806.04558)) original papers.
-For the [Attack-VC](the baseline in our paper), please refer to the their [paper](https://arxiv.org/abs/2005.08781): 
+For pretrain the speech synthesis systems, you can refer to the [Chou’s](https://arxiv.org/abs/1904.05742), [AutoVC]([URL2](https://arxiv.org/abs/1905.05879), and [SV2TTS]([URL3](https://arxiv.org/abs/1806.04558) original papers. For the Attack-VC (the baseline in our paper), please refer to their [paper](https://arxiv.org/abs/2005.08781).
 
 
 Parts of our codebase were inspired by or adapted from the following repositories:
@@ -62,7 +56,10 @@ Parts of our codebase were inspired by or adapted from the following repositorie
 - [**AutoVC**](https://github.com/cyhuang-tw/AutoVC) 
 - [**Real-Time-Voice-Cloning**](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
 
-We extend our gratitude to the authors of these repositories for making their code available to the community.
+We thank the authors of these repositories for making their code available to the community.
+
+
+
 
 
 
