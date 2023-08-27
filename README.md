@@ -28,18 +28,24 @@ example bash
 ```
 
 
-## Example of running a defense.
+## Examples of running defense.
 
-To perform the defense toward a target speech sample, you could follow the example command below:
+To perform the defense toward a target speech sample:
 
 ```bash
 python main.py --sid 005 --tau 0.06 --eps 0.1 --ksize 11 --std 1.5 --b_num 16
 ```
 
-To perform the defense toward arbitary speech samples of a speaker, you could follow the example command below:
+To perform the defense toward arbitary speech samples of a speaker:
 ```bash
 python main.py --sid 005 --tau 0.06 --eps 0.1 --ksize 11 --std 1.5 --b_num 16
 ```
+
+Evaluate the defense Effects:
+```bash
+example bash
+```
+
 
 # Others
 
