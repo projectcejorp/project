@@ -25,6 +25,7 @@ Since many audio-based libraries require specific versions, we recommend setting
 
 ```bash
 example bash
+```
 
 
 ## Example of running a defense.
@@ -33,12 +34,12 @@ To perform the defense toward a target speech sample, you could follow the examp
 
 ```bash
 python main.py --sid 005 --tau 0.06 --eps 0.1 --ksize 11 --std 1.5 --b_num 16
-
+```
 
 To perform the defense toward arbitary speech samples of a speaker, you could follow the example command below:
 ```bash
 python main.py --sid 005 --tau 0.06 --eps 0.1 --ksize 11 --std 1.5 --b_num 16
-
+```
 
 
 # Others
