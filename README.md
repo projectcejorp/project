@@ -43,7 +43,7 @@ pip install Resemblyzer==0.1.3 --no-deps
 
 Step 4: Download experimental data 
 
-You can download the data from [here](https://drive.google.com/file/d/1vVOakChiRJwV8MCXc_2HjHjRcXxzuIEW/view?usp=sharing). Upload downloading, please copy the data to the root directory. A detailed description can be found inside the downloaded file.
+You can download the data from [here](https://drive.google.com/file/d/1vVOakChiRJwV8MCXc_2HjHjRcXxzuIEW/view?usp=sharing). After downloading, please copy the data to the root directory. A detailed description can be found inside the downloaded file.
 
 # Examples of running defense.
 
