@@ -41,6 +41,9 @@ Step 3: Manually install Resemblyzer without its dependencies (to avoid conflict
 pip install Resemblyzer==0.1.3 --no-deps
 ```
 
+Step 4: Download experimental data 
+
+You can download the data from here. Upload downloading, please copy the data to the root directory. A detailed description can be found inside the downloaded file.
 
 # Examples of running defense.
 
