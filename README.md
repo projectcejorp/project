@@ -21,11 +21,26 @@ This repository hosts the codes of our project, which focuses on protecting a sp
 
 # Setup of the project.
 
-Since many audio-based libraries require specific versions, we recommend setting up the environments by running:
+Since many audio-based libraries require specific versions, we recommend setting up a new environment to avoid "dependencies" issues:
+
+Step 1: Create a new conda environment with Python version 3.8
 
 ```bash
-example bash
+conda create --name my_env python=3.8
+conda activate my_new_env
 ```
+
+Step 2: Install requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+Step 3: Manually install Resemblyzer without its dependencies (to avoid conflicts with requirements.txt)
+```bash
+pip install Resemblyzer==0.1.3 --no-deps
+```
+
 
 # Examples of running defense.
 
