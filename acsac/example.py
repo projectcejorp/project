@@ -1,6 +1,7 @@
 import numpy as np
 import soundfile as sf
 import torch
+import os
 
 from pathlib import Path
 from resemblyzer import VoiceEncoder, preprocess_wav
@@ -28,7 +29,7 @@ def main():
     xd_infer_path = f'./examples/xd_infer_{args.sid}.wav' # Final synthetic speech based on modified speech (W(xd) in paper)
 
     # Load model and set model configurations
-    model, config, attr, device = load_model("choumodel")
+    model, config, attr, device = load_model("chou_model")
     model_config = {
         'model': model,
         'attr': attr
