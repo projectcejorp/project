@@ -52,6 +52,8 @@ To perform the defense on a target speech sample:
 ```bash
 python example.py --sid 005 --tau 0.06 
 ```
+-sid: the id of the speech (e.g., examples/p287/p287_005.wav)
+-tau: the distortion of the original sample (\tau_d in the paper). We use a smaller value in the example to demonstrate the effectiveness of our defense. 
 
 To perform the defense on multiple speech samples of a speaker and get SpeakerMask:
 ```bash
