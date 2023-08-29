@@ -62,7 +62,7 @@ python speakermask.py --spk_id p287 --tau 0.06 --system chou
 
 Evaluation:
 
-The Attack results will be printed and saved with the above commands, for example:
+The Attack results will be printed with the above commands, for example:
 
 ```bash
 Check the quality of synthetic speech before and after the modification: before defense: 0.743, after defense: 0.536
