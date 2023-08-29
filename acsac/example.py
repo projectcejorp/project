@@ -15,6 +15,7 @@ def main():
     encoder = VoiceEncoder()  # Load Es()
 
     # Example paths
+    os.makedirs('temp_wav', exist_ok=True)
     tgt_path = f'./examples/p287_{args.sid}.wav'          # speech of target speaker
     src_path = f'./examples/content.wav'                  # speech of source speaker
     infer_path = f'./temp_wav/raw_infer_{args.sid}.wav'   # path of raw synthetic speech
