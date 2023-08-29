@@ -18,7 +18,7 @@ def main():
     tgt_path = f'./examples/p287_{args.sid}.wav'          # speech of target speaker
     src_path = f'./examples/content.wav'                  # speech of source speaker
     infer_path = f'./temp_wav/raw_infer_{args.sid}.wav'   # path of raw synthetic speech
-    es_path = f'speaker_meta/p287.npy'                    # speaker embedding (optional)
+    es_path = f'vctk_spk_emb/p287.npy'                    # speaker embedding (optional)
 
     # Path definitions
     mask_path = 'temp_wav/mask.wav'                       # temporary path of modified speech
