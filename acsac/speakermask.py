@@ -14,7 +14,7 @@ from defense import mask_search_test
 from inference import chous_infer, autovc_infer, sv2_infer
 from parameters import args
 
-sys.path.append('SV2TTS')
+sys.path.append('SV2TTS') # "git clone https://github.com/CorentinJ/Real-Time-Voice-Cloning" under our root and rename the folder name "Real-Time-Voice-Cloning"" with SV2TTS
 from encoder import inference as sv2_encoder
 from synthesizer.inference import Synthesizer
 from vocoder import inference as sv2_vocoder
@@ -26,15 +26,15 @@ def main():
 
     # load model and set model configurations
     if args.system == 'chou':
-        model, config, attr, device = load_model("choumodel")
+        model, config, attr, device = load_model("chou_model")
         model_config = {
             'model': model,
             'attr': attr
         }
 
     elif args.system == 'autovc':
-        autovc_model = torch.jit.load('auto_vc_model/model.pt').to(args.device)
-        autovc_vocoder = torch.jit.load('auto_vc_model/vocoder.pt').to(args.device)
+        autovc_model = torch.jit.load('autovc_model/model.pt').to(args.device)
+        autovc_vocoder = torch.jit.load('autovc_model/vocoder.pt').to(args.device)
         wav2mel = Wav2Mel()
 
         model_config = {
@@ -44,9 +44,9 @@ def main():
         }
 
     elif args.system == 'sv2tts':
-        encoder_path = Path('sv2_model/encoder.pt')
-        syn_path = Path('sv2_model/synthesizer.pt')
-        vocoder_path = Path('sv2_model/vocoder.pt')
+        encoder_path = Path('sv2tts_model/encoder.pt')
+        syn_path = Path('sv2tts_model/synthesizer.pt')
+        vocoder_path = Path('sv2tts_model/vocoder.pt')
 
         sv2_encoder.load_model(encoder_path)
         sv2_synthesizer = Synthesizer(syn_path)
