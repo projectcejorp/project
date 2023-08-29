@@ -63,7 +63,7 @@ Evaluation:
 The Attack results will be printed and saved with the above commands, for example:
 
 ```bash
-Check the quality of synthetic speech: before and after the modification: 0.743, after: 0.536
+Check the quality of synthetic speech before and after the modification: before defense: 0.743, after defense: 0.536
 Attack against Resembylzer before and after the defense: success, after: fail
 The ASR of the synthetic speeches based on speaker p287 is 10% after the defense.
 ```
