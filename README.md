@@ -27,7 +27,7 @@ Step 1: Create a new conda environment with Python version 3.8
 
 ```bash
 conda create --name my_env python=3.8
-conda activate my_new_env
+conda activate my_env
 ```
 
 Step 2: Install requirements
@@ -43,22 +43,23 @@ pip install Resemblyzer==0.1.3 --no-deps
 
 Step 4: Download experimental data 
 
-You can download the data from [here](https://drive.google.com/file/d/1vVOakChiRJwV8MCXc_2HjHjRcXxzuIEW/view?usp=sharing). After downloading, please copy the data to the root directory. A detailed description can be found inside the downloaded file.
+You can download the data from [here](https://drive.google.com/file/d/1vVOakChiRJwV8MCXc_2HjHjRcXxzuIEW/view?usp=sharing). After downloading, please copy the data to the root directory. A detailed description can be found in the submitted pdf file.
 
 # Examples of running defense.
 
 To perform the defense on a target speech sample:
 
 ```bash
-python main.py --sid 005 --tau 0.06 --eps 0.1 --ksize 11 --std 1.5 --b_num 16
+python example.py --sid 005 --tau 0.06 --system chou
 ```
 
-To perform the defense on arbitrary speech samples of a speaker:
+To perform the defense on multiple speech samples of a speaker and get SpeakerMask:
 ```bash
-python main.py --sid 005 --tau 0.06 --eps 0.1 --ksize 11 --std 1.5 --b_num 16
+python speakermask.py --spk_id p287 --tau 0.06 --system chou 
 ```
 
 Evaluate the defense performance:
+
 ```bash
 example bash
 ```
