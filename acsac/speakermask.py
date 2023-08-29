@@ -67,7 +67,7 @@ def main():
 
     # initialze the speaker_mask (will add the searched pairs of 10 speeches into the list)
     speaker_mask = []
-    es_path = f'speaker_meta/{args.spk_id}.npy'
+    es_path = f'vctk_spk_emb/{args.spk_id}.npy'
 
     # results_xd: modified speeches of all speakers
     # results_xd_infer: synthetic speeches based on modified speeches
