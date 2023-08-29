@@ -50,7 +50,7 @@ You can download the data from [here](https://drive.google.com/file/d/1vVOakChiR
 To perform the defense on a target speech sample:
 
 ```bash
-python example.py --sid 005 --tau 0.06 --system chou
+python example.py --sid 005 --tau 0.06 
 ```
 
 To perform the defense on multiple speech samples of a speaker and get SpeakerMask:
