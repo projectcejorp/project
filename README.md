@@ -58,12 +58,15 @@ To perform the defense on multiple speech samples of a speaker and get SpeakerMa
 python speakermask.py --spk_id p287 --tau 0.06 --system chou 
 ```
 
-Evaluate the defense performance:
+Evaluation:
+
+The Attack results will be printed and saved with the above commands, for example:
 
 ```bash
-example bash
+Check the quality of synthetic speech: before and after the modification: 0.743, after: 0.536
+Attack against Resembylzer before and after the defense: success, after: fail
+The ASR of the synthetic speeches based on speaker p287 is 10% after the defense.
 ```
-
 
 # Integration Tips
 
